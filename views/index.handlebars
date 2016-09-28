@@ -11,12 +11,14 @@
 
         <div class=" col-sm-4">
             <div style="margin-left:10%;">
-                {{#each database}}
-                {{this.id}}. {{this.burger_name}} {{this.devoured}}
+                {{#each database}} 
 
                 <form action="/delete?_method=DELETE" method="POST">
-                    <input type="hidden" name="id" value="{{this.id}}">
-                    <button type="submit">Delete Plan!</button>
+               
+                <p>{{this.id}}. {{this.burger_name}} {{this.devoured}}
+                    
+                    <input type="hidden" name="id">
+                    <button type="submit">Delete Plan!</button></p>
                 </form>
 
                 {{/each}}
@@ -32,6 +34,16 @@
 
         </div>
 
+    </div>
+    
+    <div style="text-align:center;" class="row">
+    
+        <h2>Add a Burger</h2>
+<form method="POST" action="/create" class="button-size">
+	<textarea type="text" name="plan"></textarea>
+	<p><button type="submit">Submit!</button></p>
+</form>
+        
     </div>
 
 
