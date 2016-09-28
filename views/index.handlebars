@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-12" id="title">
+            <h1 style="text-align:center;">Burgers</h1>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class=" col-sm-4">
+            <div style="margin-left:10%;">
+                {{#each database}}
+                {{this.id}}. {{this.burger_name}} {{this.devoured}}
+
+                <form action="/delete?_method=DELETE" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <button type="submit">Delete Plan!</button>
+                </form>
+
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            Picture HERE
+        </div>
+
+        <div class="col-sm-4">
+            ss
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
