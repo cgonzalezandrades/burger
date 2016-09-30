@@ -1,12 +1,17 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body{
-    background-color: white;
+    background-color: cornflowerblue;
  
 }
 
 #title{
     text-align: center;
-  background-color: black;
-   color: white;
+  background-color: #efefef;
+/*   color: black;*/
 }
 
 #burger-list{
@@ -14,6 +19,13 @@ body{
   background-color: aqua;
   margin-top: 1%;
 }
+
+#eaten-list{
+  border-style: solid;
+  background-color: aqua;
+  margin-top: 1%;
+}
+
 
 .picture-colunm{
 /*  border-style: solid;*/
@@ -24,11 +36,11 @@ body{
 
 img{
   width: 200px;
-  height: 250px;
+  height: 200px;
 }
 
 .devoured-colunm{
-  border-style: solid;
+/*  border-style: solid;*/
 }
 
 /*
@@ -37,7 +49,7 @@ img{
 }
 */
 
-#eat-these-title{
+#columns-title{
   text-align: center;
 }
 
@@ -51,5 +63,12 @@ img{
 }
 
 .footer{
-  background-color: aquamarine;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+
 }
