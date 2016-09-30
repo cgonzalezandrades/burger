@@ -10,6 +10,7 @@ var exphbs = require('express-handlebars');
 var app = express();
 
 app.use(express.static(process.cwd() + '/public'));
+
 app.use(override('_method'));
 
 app.engine('handlebars', exphbs({

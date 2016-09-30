@@ -8,65 +8,96 @@
   </div>
 
   <div class="row">
+    <div class="col-lg-12 picture-colunm">
+      <!--      Picture HERE-->
+      <img src="/img/burger.gif">
 
-    <div class=" col-lg-4 burger-form">
-      
+    </div>
+  </div>
+
+  <div class="row burgers-form">
+
+
+    <div class="col-xs-4">
+      <h2 id="eat-these-title">Eat one of These</h2>
+
+      <div id="burger-list">
+
         {{#each hamburgers}}
-        
+
         <form action="/update?_method=PUT" method="POST">
-          
+
           <input type="hidden" name="id" value="{{this.id}}">
-        
-       
-          <div class="col-sm-8">
-          {{#unless this.devoured}}
-          {{this.id}}. {{this.burger_name}}
+
+
+          <div class="col-sm-10">
+            {{#unless this.devoured}}
+            <h4>{{this.id}} - {{this.burger_name}}</h4>
+            <!--          <br>-->
           </div>
-          <div class=" col-md-4">
-          <button type="submit">Delete Plan!</button>
-        </div>  
+
+          <div class=" col-md-2">
+            <br>
+            <button class="btn btn-default" type="submit">Eat Me!</button>
+
+          </div>
+
           {{/unless}}
-          
-      </form>
+
+        </form>
 
         {{/each}}
-      
-    </div>
 
-
-
-    <div class="col-lg-4 picture-colunm">
-      Picture HERE
-    </div>
-
-    <div class="col-lg-4 devoured-colunm">
-      Other Colunm
-      
-      <div class="col-sm-12">
-      {{#each hamburgers}}
-      
-      {{#if this.devoured}}
-      
-      <p>{{this.id}}. {{this.burger_name}}</p>
       </div>
-      {{/if}}
-      
-      {{/each}}
-      
 
     </div>
+
+
+    <div class="col-lg-4 col-xs-offset-4 devoured-colunm">
+      Other Colunm
+
+      <div class="col-sm-12">
+
+        {{#each hamburgers}} {{#if this.devoured}}
+
+        <p>{{this.id}}. {{this.burger_name}}</p>
+
+        {{/if}} {{/each}}
+
+
+      </div>
+
+    </div>
+
+
+
 
   </div>
+
+
 
 </div>
 
 <div class="row">
+  <div class="col-xs-4 col-xs-offset-4" id="submit-burger">
     <h2>Add a Burger</h2>
-   
+
     <form method="POST" action="/create" class="button-size">
-      <textarea type="text" name="burger"></textarea>
-      <p>
-        <button type="submit">Submit!</button>
-      </p>
+
+
+      <div class="input-group">
+        <input type="text" name="burger" class="form-control" placeholder="Burgerme"></input>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Submit!</button>
+        </span>
+      </div>
+
     </form>
   </div>
+</div>
+
+<footer>
+  <div class="row footer">
+
+  </div>
+</footer>

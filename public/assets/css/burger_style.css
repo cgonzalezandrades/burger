@@ -1,19 +1,55 @@
 body{
     background-color: white;
+ 
 }
 
 #title{
     text-align: center;
+  background-color: black;
+   color: white;
 }
 
-.burger-form{
+#burger-list{
   border-style: solid;
+  background-color: aqua;
+  margin-top: 1%;
 }
 
 .picture-colunm{
-  border-style: solid;
+/*  border-style: solid;*/
+  text-align: center;
+/*  margin-top: 5%;*/
+  
+}
+
+img{
+  width: 200px;
+  height: 250px;
 }
 
 .devoured-colunm{
   border-style: solid;
+}
+
+/*
+.clearfix {
+  overflow: auto;
+}
+*/
+
+#eat-these-title{
+  text-align: center;
+}
+
+.burgers-form{
+/*  margin-top: 5%;*/
+}
+
+#submit-burger{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.footer{
+  background-color: aquamarine;
 }
