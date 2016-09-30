@@ -5,4 +5,4 @@ INSERT INTO `burgers_db`.`burgers`
 VALUES
 ('Cheese Burger',
 false,
-'2016-08-19'),('Bacon cheese Burger',true,'2016-09-27'),('Big Mac',true,'2016-09-26');
+'2016-08-19'),('Bacon cheese Burger',false,'2016-09-27'),('Big Mac',false,'2016-09-26');

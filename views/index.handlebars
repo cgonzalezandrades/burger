@@ -1,58 +1,72 @@
 <div class="container">
 
-    <div class="row">
+  <div class="row">
 
-        <div class="col-sm-12" id="title">
-            <h1 style="text-align:center;">Burgers</h1>
-        </div>
+    <div class="col-sm-12" id="title">
+      <h1>Eat Those Burgers</h1>
     </div>
+  </div>
 
-    <div class="row">
+  <div class="row">
 
-        <div class=" col-sm-4">
-            <div style="margin-left:10%;">
-                {{#each database}} 
-
-                <form action="/delete?_method=DELETE" method="POST">
-               
-                <p>{{this.id}}. {{this.burger_name}} {{this.devoured}}
-                    
-                    <input type="hidden" name="id">
-                    <button type="submit">Delete Plan!</button></p>
-                </form>
-
-                {{/each}}
-            </div>
-        </div>
-
-        <div class="col-sm-4">
-            Picture HERE
-        </div>
-
-        <div class="col-sm-4">
-            ss
-
-        </div>
-
-    </div>
-    
-    <div style="text-align:center;" class="row">
-    
-        <h2>Add a Burger</h2>
-<form method="POST" action="/create" class="button-size">
-	<textarea type="text" name="plan"></textarea>
-	<p><button type="submit">Submit!</button></p>
-</form>
+    <div class=" col-lg-4 burger-form">
+      
+        {{#each hamburgers}}
         
+        <form action="/update?_method=PUT" method="POST">
+          
+          <input type="hidden" name="id" value="{{this.id}}">
+        
+       
+          <div class="col-sm-8">
+          {{#unless this.devoured}}
+          {{this.id}}. {{this.burger_name}}
+          </div>
+          <div class=" col-md-4">
+          <button type="submit">Delete Plan!</button>
+        </div>  
+          {{/unless}}
+          
+      </form>
+
+        {{/each}}
+      
     </div>
 
 
 
+    <div class="col-lg-4 picture-colunm">
+      Picture HERE
+    </div>
 
+    <div class="col-lg-4 devoured-colunm">
+      Other Colunm
+      
+      <div class="col-sm-12">
+      {{#each hamburgers}}
+      
+      {{#if this.devoured}}
+      
+      <p>{{this.id}}. {{this.burger_name}}</p>
+      </div>
+      {{/if}}
+      
+      {{/each}}
+      
 
+    </div>
 
-
-
-
+  </div>
 
 </div>
+
+<div class="row">
+    <h2>Add a Burger</h2>
+   
+    <form method="POST" action="/create" class="button-size">
+      <textarea type="text" name="burger"></textarea>
+      <p>
+        <button type="submit">Submit!</button>
+      </p>
+    </form>
+  </div>

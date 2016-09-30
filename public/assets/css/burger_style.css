@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+#title{
+    text-align: center;
+}
+
+.burger-form{
+  border-style: solid;
+}
+
+.picture-colunm{
+  border-style: solid;
+}
+
+.devoured-colunm{
+  border-style: solid;
+}
