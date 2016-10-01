@@ -99,7 +99,7 @@ app.put('/update', function (req, res) {
 
 
 
-var PORT = 3001;
+var PORT = process.env.PORT || 3001;
 app.listen(PORT, function () {
   console.log('IM LISTENING IS PORT ' + PORT);
 
