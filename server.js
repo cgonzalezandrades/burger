@@ -59,7 +59,6 @@ app.get('/', function (req, res) {
     });
 
     console.log(obj[0].devoured);
-    //    console.log(obj.devoured);
     res.render('index', {
       hamburgers: obj
     });
@@ -88,12 +87,6 @@ app.post('/create', function (req, res) {
 
 });
 
-//app.delete('/delete', function (req, res) {
-//  connection.query('DELETE FROM burgers WHERE id = ?', [req.body.id], function (err, result) {
-//    if (err) throw err;
-//    res.redirect('/');
-//  });
-//});
 
 app.put('/update', function (req, res) {
   connection.query('UPDATE burgers SET devoured = 1 WHERE id = ?',[req.body.id], function (err, result) {

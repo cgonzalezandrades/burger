@@ -1,10 +1,10 @@
 html {
   height: 100%;
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
 }
 
 body{
-    background-color: cornflowerblue;
+    background-color: white;
  
 }
 
@@ -22,12 +22,12 @@ body{
 
 #eaten-list{
   border-style: solid;
-  background-color: aqua;
+  background-color: ;
   margin-top: 1%;
 }
 
 
-.picture-colunm{
+.picture-column{
 /*  border-style: solid;*/
   text-align: center;
 /*  margin-top: 5%;*/
@@ -39,7 +39,7 @@ img{
   height: 200px;
 }
 
-.devoured-colunm{
+.devoured-column{
 /*  border-style: solid;*/
 }
 
