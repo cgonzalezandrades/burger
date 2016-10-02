@@ -7,8 +7,8 @@
 ##### Users can also add a new Burger to the Database. 
 
 ### This app is using:
-#  *Node.js
-* ##### JavaScript
+# * Node.js
+* #####JavaScript
 * ##### CSS
 * ##### HTML
 * ##### MySql
