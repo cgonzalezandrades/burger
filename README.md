@@ -15,7 +15,7 @@
 #### 5. MySql
 #### 6. Handlebars
 #### 7. npm Pacckages
-	* Express
+ * Express
 * ###### body-parser
 * ###### mysql
 * ###### express-handlebars
