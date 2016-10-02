@@ -21,7 +21,7 @@
  * express-handlebars
  * Method-Override
 
-## Let me see this [Burger App](http://tranquil-beach-33922.herokuapp.com/) Live !
+## Let me see this Burger App [Live !](http://tranquil-beach-33922.herokuapp.com/)
 
 
 
