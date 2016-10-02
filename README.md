@@ -9,13 +9,13 @@
 ## This app is using:
 
 #### 1. Node.js
-* JavaScript
-* ##### CSS
-* ##### HTML
-* ##### MySql
-* ##### Handlebars
-* ##### npm Pacckages
-* ###### Express
+#### 2. JavaScript
+#### 3. CSS
+#### 4. HTML
+#### 5. MySql
+#### 6. Handlebars
+#### 7. npm Pacckages
+	* Express
 * ###### body-parser
 * ###### mysql
 * ###### express-handlebars
