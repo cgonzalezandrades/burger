@@ -7,18 +7,18 @@
 ##### Users can also add a new Burger to the Database. 
 
 ## This app is using:
-##### *  Node.js
-##### *  JavaScript
-##### * CSS
-##### * HTML
-##### * MySql
-##### * Handlebars
-##### * npm Pacckages
-#####   * Express
-#####   * body-parser
-#####   * mysql
-#####   * express-handlebars
-#####   * Method-Override
+* ##### Node.js
+* ##### JavaScript
+* ##### CSS
+* ##### HTML
+* ##### MySql
+* ##### Handlebars
+* ##### npm Pacckages
+* ###### Express
+* ###### body-parser
+* ###### mysql
+* ###### express-handlebars
+* ###### Method-Override
 
 # [Let me See it !][app link]
 
