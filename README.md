@@ -16,10 +16,10 @@
 #### 6. Handlebars
 #### 7. npm Pacckages
  * Express
-* ###### body-parser
-* ###### mysql
-* ###### express-handlebars
-* ###### Method-Override
+ * body-parser
+ * mysql
+ * express-handlebars
+ * Method-Override
 
 ## [Let me See it !][app link]
 
