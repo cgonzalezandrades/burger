@@ -9,7 +9,7 @@
 ## This app is using:
 
 #### 1. Node.js
-* #####JavaScript
+* JavaScript
 * ##### CSS
 * ##### HTML
 * ##### MySql
