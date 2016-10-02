@@ -1,9 +1,10 @@
-<div class="container">
+<div class="container page-wrap">
 
   <div class="row">
 
     <div class="col-sm-12" id="title">
-      <h1>Eat Those Burgers</h1>
+      <a id="page-title" href="http://tranquil-beach-33922.herokuapp.com/"><h1>Burger App</h1></a>
+      <hr id="yellow-line">
     </div>
   </div>
 
@@ -19,7 +20,7 @@
 
 
     <div class="col-xs-6">
-      <h2 id="columns-title">Eat one of These</h2>
+      <h2 id="columns-title">Eat one of These<hr></h2>
 
       <div id="burger-list">
 
@@ -27,8 +28,7 @@
 
         <form action="/update?_method=PUT" method="POST">
 
-          <input type="hidden" name="id" value="{{this.id}}"> 
-{{#unless this.devoured}}
+          <input type="hidden" name="id" value="{{this.id}}"> {{#unless this.devoured}}
           <div class="col-sm-8">
 
             <h4>{{this.id}} - {{this.burger_name}}</h4>
@@ -37,7 +37,7 @@
 
           <div class=" col-md-4">
             <br>
-            <button class="btn btn-default" type="submit">Eat Me!</button>
+            <button class="btn btn-default eatme-button" type="submit"><strong>Eat Me !</strong></button>
 
           </div>
 
@@ -51,28 +51,26 @@
 
     </div>
 
-
     <div class="col-xs-6 devoured-column">
 
       <div class="col-sm-12">
-        <h2 id="columns-title">These are Gone !</h2>
+        <h2 id="columns-title">These are Gone !<hr></h2>
         <div id="eaten-list">
 
           {{#each hamburgers}} {{#if this.devoured}}
-
-          <h4><p>{{this.id}}. {{this.burger_name}}</p></h4> {{/if}} {{/each}}
+          <div class="col-xs-8">
+            <h4>{{this.id}}. {{this.burger_name}}</h4>
+          </div>
+          {{/if}} {{/each}}
         </div>
 
       </div>
 
     </div>
 
-
-
-
   </div>
 
-  <div class="row">
+  <div class="row" id="burgerButton">
     <div class="col-xs-4 col-xs-offset-4" id="submit-burger">
       <h2>Add a Burger</h2>
 
@@ -80,9 +78,9 @@
 
 
         <div class="input-group">
-          <input type="text" name="burger" class="form-control" placeholder="Burgerme"></input>
+          <input type="text" name="burger" class="form-control" placeholder="Enter a Burger "></input>
           <span class="input-group-btn">
-          <button class="btn btn-default" type="submit">Submit!</button>
+          <button class="btn btn-default burgerme-button" type="submit"><strong>Burger Me!</strong></button>
         </span>
         </div>
 
@@ -92,9 +90,7 @@
 
 </div>
 
-
-
-
-<div class=" row footer">
-  <h3>Carlos Gonzalez</h3>
+<div class=" row site-footer">
+  <h4>Carlos Gonzalez</h4>
+  <hr id="yellow-line">
 </div>

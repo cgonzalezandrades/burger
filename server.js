@@ -6,7 +6,6 @@ var connection = require('./config/connection');
 var exphbs = require('express-handlebars');
 
 
-
 var app = express();
 
 app.use(express.static(process.cwd() + '/public'));
@@ -79,12 +78,7 @@ app.post('/create', function (req, res) {
       console.log(req.body.burger);
 
       res.redirect('/');
-
-
     });
-
- 
-
 });
 
 
@@ -94,9 +88,6 @@ app.put('/update', function (req, res) {
     res.redirect('/');
   });
 });
-
-
-
 
 
 var PORT = process.env.PORT || 3001;
