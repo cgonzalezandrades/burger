@@ -7,7 +7,7 @@
 ##### Users can also add a new Burger to the Database. 
 
 ### This app is using:
-# * Node.js
+#  *Node.js
 * ##### JavaScript
 * ##### CSS
 * ##### HTML
@@ -20,7 +20,7 @@
 * ###### express-handlebars
 * ###### Method-Override
 
-# [Let me See it !][app link]
+## [Let me See it !][app link]
 
 [app link]:http://tranquil-beach-33922.herokuapp.com/
 
