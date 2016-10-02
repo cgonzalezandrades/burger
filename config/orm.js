@@ -12,4 +12,4 @@ function updateOne(){
     
 };
 
-module.export = orm;
+module.export = orm; 
