@@ -1,4 +1,4 @@
-# Burger
+# Burger App
 ---
 
 #### But Why ?
@@ -21,8 +21,8 @@
  * express-handlebars
  * Method-Override
 
-## [Let me See it !][app link]
+## Let me see this [Burger App](http://tranquil-beach-33922.herokuapp.com/) Live !
 
-[app link]:http://tranquil-beach-33922.herokuapp.com/
+
 
 
